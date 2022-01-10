@@ -1,0 +1,68 @@
+-- ftd.grid slide-type-2:
+background-color: #f4f4f4
+width: fill
+height: fill
+string title:
+optional string subtitle:
+optional string text:
+optional string image-1:
+optional string image-2:
+slots: slide-info slide-image
+slot-heights: 100%
+slot-widths: 50% auto
+padding-left: 50
+padding-right: 50
+padding-bottom: 50
+
+--- slide-information:
+title: $title
+subtitle: $subtitle
+text: $text
+slot: slide-info
+
+--- ftd.image:
+src: $image-1
+height: fill
+crop: true
+slot: slide-image
+
+
+-- ftd.column slide-information:
+string title:
+optional string subtitle:
+optional string text:
+width: fill
+height: fill
+/spacing: space-around
+padding-left: 70
+padding-top: 70
+padding-bottom: 150
+
+--- ftd.column:
+width: fill
+height: fill
+border-width: 2
+border-color: orange
+
+--- ftd.text: $title
+style: medium
+color: #8c8cd6
+align: center
+size: 50
+padding-top: 50
+padding-left: 30
+margin-bottom: 10
+text-align: center
+
+--- ftd.text: $subtitle
+if: $subtitle is not null
+font: times new roman
+color: #656f65
+align: center
+size: 20
+
+
+/--- ftd.text: $text
+if: $text is not null
+font: sans-serif
+text-align: center

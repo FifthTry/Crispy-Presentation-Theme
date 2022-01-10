@@ -1,2 +1,3 @@
--- import: fifthtry.github.io/blog-theme as lib
--- import: config
+-- import: presentation as ppt
+-- import: slide
+-- import: library
