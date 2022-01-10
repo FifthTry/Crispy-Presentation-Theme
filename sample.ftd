@@ -18,15 +18,13 @@ desconocido usó una galería de textos y los mezcló de tal manera que logró h
 
 
 --- slide2.slide-type:
-title: Title 2
-subtitle: Subtitle Text Added Here
 slide-number: 1
-image-1: static/pic2.jpeg
-image-2: static/pic1.jpeg
-
-
-Presentations Templates are communication tools that can be used as lectures, reports, and more.
-
-Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de
-relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta)
-desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.
+title-1: DRINKS
+title-2: STARTERS
+title-3: MAIN COURSE
+text-1: A drink is a liquid intended for human consumption. In addition to their basic function of satisfying thirst, drinks play important roles in human culture.
+text-2: Starters consist of a wide variety of hot or cold dishes served before the main course of a meal. As part of a formal dinner, they may be preceded by soup and hors d'oeuvres.
+text-3: The main course is food that is served as the main dish in a multi-course meal. It is often served after the entrée.
+image-1: static/drink.png
+image-2: static/pancake.png
+image-3: static/maincourse.png

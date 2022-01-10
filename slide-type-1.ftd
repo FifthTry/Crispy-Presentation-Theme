@@ -62,8 +62,3 @@ color: #656f65
 align: center
 size: 30
 
-
-/--- ftd.text: $text
-if: $text is not null
-font: sans-serif
-text-align: center

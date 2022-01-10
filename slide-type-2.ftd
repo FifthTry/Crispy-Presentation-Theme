@@ -4,11 +4,15 @@
 background-color: #f4f4f4
 width: fill
 height: fill
-string title:
-optional string subtitle:
-optional string text:
+optional string title-1:
+optional string title-2:
+optional string title-3:
+optional string text-1:
+optional string text-2:
+optional string text-3:
 optional string image-1:
 optional string image-2:
+optional string image-3:
 integer slide-number:
 slots: slide-image1 slide-image2 slide-image3 | slide-text1 slide-text2 slide-text3
 slot-heights: 50% 50%
@@ -20,26 +24,23 @@ padding-right: 50
 padding-bottom: 50
 if: $library.slide-no == $slide-number
 
---- slide-information1:
-title: DRINKS
-/subtitle: $subtitle
-text: A drink is a liquid intended for human consumption. In addition to their basic function of satisfying thirst, drinks play important roles in human culture.
+--- slide-information:
+title: $title-1
+text: $text-1
 slot: slide-text1
 
---- slide-information2:
-title: STARTERS
-/subtitle: $subtitle
-text: Starters consist of a wide variety of hot or cold dishes served before the main course of a meal. As part of a formal dinner, they may be preceded by soup and hors d'oeuvres.
+--- slide-information:
+title: $title-2
+text: $text-2
 slot: slide-text2
 
---- slide-information3:
-title: MAIN COURSE
-/subtitle: $subtitle
-text: The main course is food that is served as the main dish in a multi-course meal. It is often served after the entrée.
+--- slide-information:
+title: $title-3
+text: $text-3
 slot: slide-text3
 
 --- ftd.image:
-src: static/drink.png
+src: $image-1
 height: fill
 crop: true
 slot: slide-image1
@@ -47,7 +48,7 @@ border-width: 3
 border-color: orange
 
 --- ftd.image:
-src: static/pancake.png
+src: $image-2
 height: fill
 crop: true
 slot: slide-image2
@@ -55,7 +56,7 @@ border-width: 3
 border-color: orange
 
 --- ftd.image:
-src: static/maincourse.png
+src: $image-3
 height: fill
 crop: true
 slot: slide-image3
@@ -63,9 +64,8 @@ border-width: 3
 border-color: orange
 
 
--- ftd.column slide-information1:
+-- ftd.column slide-information:
 string title:
-/optional string subtitle:
 optional string text:
 width: fill
 height: fill
@@ -76,7 +76,7 @@ padding: 30
 style: medium
 color: #8c8cd6
 align: center
-size: 35
+size: 40
 padding-top: 10
 margin-bottom: 15
 text-align: center
@@ -86,51 +86,5 @@ if: $text is not null
 font: times new roman
 color: #656f65
 text-align: center
+size: 30
 
--- ftd.column slide-information2:
-string title:
-/optional string subtitle:
-optional string text:
-width: fill
-height: fill
-spacing: space-around
-padding: 30
-
---- ftd.text: $title
-style: medium
-color: #8c8cd6
-align: center
-size: 35
-padding-top: 10
-margin-bottom: 15
-text-align: center
-
---- ftd.text: $text
-if: $text is not null
-font: times new roman
-color: #656f65
-text-align: center
-
--- ftd.column slide-information3:
-string title:
-/optional string subtitle:
-optional string text:
-width: fill
-height: fill
-spacing: space-around
-padding: 30
-
---- ftd.text: $title
-style: medium
-color: #8c8cd6
-align: center
-size: 35
-padding-top: 10
-margin-bottom: 15
-text-align: center
-
---- ftd.text: $text
-if: $text is not null
-font: times new roman
-color: #656f65
-text-align: center
