@@ -1,3 +1,5 @@
+-- import: library
+
 -- ftd.grid slide-type:
 background-color: #f4f4f4
 width: fill
@@ -7,12 +9,14 @@ optional string subtitle:
 optional string text:
 optional string image-1:
 optional string image-2:
+integer slide-number:
 slots: slide-info slide-image
 slot-heights: 100%
 slot-widths: 50% auto
 padding-left: 50
 padding-right: 50
 padding-bottom: 50
+if: $library.slide-no == $slide-number
 
 --- slide-information:
 title: $title

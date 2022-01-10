@@ -1,3 +1,4 @@
 -- import: presentation as ppt
--- import: slide
 -- import: library
+-- import: slide-type-1 as slide1
+-- import: slide-type-2 as slide2
