@@ -1,0 +1,101 @@
+-- import: library
+
+-- ftd.grid slide-type:
+background-color: #f4f4f4
+width: fill
+height: fill
+optional string title-1:
+optional string title-2:
+optional string title-3:
+optional string text-1:
+optional string text-2:
+optional string text-3:
+optional string image-1:
+optional string image-2:
+optional string image-3:
+integer slide-number:
+slots: . slide-image1 slide-info1 . | slide-heading . slide-info2 slide-image2 | . slide-image3 slide-info3 .
+slot-heights: 33% 33% 33%
+slot-widths: 20% 27% 27% auto
+padding-left: 50
+padding-top: 50
+padding-right: 50
+padding-bottom: 50
+if: $library.slide-no == $slide-number
+
+--- slide-information:
+title: $title-1
+subtitle: $text-1
+slot: slide-info1
+
+--- ftd.image:
+src: $image-1
+height: fill
+crop: true
+slot: slide-image1
+border-top: 2
+border-color: orange
+
+--- ftd.text: Buyer Journey
+slot: slide-heading
+text-align: left
+color: #8c8cd6
+size: 50
+
+--- slide-information:
+title: $title-2
+subtitle: $text-2
+slot: slide-info2
+
+--- ftd.image:
+src: $image-2
+height: fill
+crop: true
+slot: slide-image2
+border-top: 2
+border-color: orange
+
+--- slide-information:
+title: $title-3
+subtitle: $text-3
+slot: slide-info3
+
+--- ftd.image:
+src: $image-3
+height: fill
+crop: true
+slot: slide-image3
+border-top: 2
+border-bottom: 3
+border-color: orange
+
+
+
+-- ftd.column slide-information:
+string title:
+optional string subtitle:
+width: fill
+height: fill
+border-top: 2
+border-bottom: 2
+border-color: orange
+padding: 20
+
+--- ftd.text: $title
+style: medium
+color: #8c8cd6
+align: center
+size: 30
+margin-bottom: 10
+text-align: center
+
+--- ftd.text: $subtitle
+if: $subtitle is not null
+font: times new roman
+color: #656f65
+text-align: center
+size: 20
+align: center
+
+
+

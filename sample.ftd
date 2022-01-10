@@ -1,4 +1,4 @@
--- library.total: 1
+-- library.total: 2
 
 -- ppt.presentation:
 
@@ -28,3 +28,16 @@ text-3: The main course is food that is served as the main dish in a multi-cours
 image-1: static/drink.png
 image-2: static/pancake.png
 image-3: static/maincourse.png
+
+--- slide3.slide-type:
+slide-number: 2
+title-1: AWARENESS
+title-2: CONSIDERATION
+title-3: DECISION
+text-1: A good menu card to present all the options of dishes present in the restaurant
+text-2: Customers consider their choices of restaurants. The restaurant venue and ambiance attract customers to visit next time.
+text-3: The services and food served in the restaurant should be decided properly. The staffs should be selected according to the standards.
+image-1: static/aware.png
+image-2: static/consideration.png
+image-3: static/decision.png
+
