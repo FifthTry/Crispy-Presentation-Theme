@@ -32,17 +32,14 @@ string title:
 optional string subtitle:
 optional string text:
 width: fill
-height: fill
-/spacing: space-around
-padding-left: 70
-padding-top: 70
-padding-bottom: 150
+align: right
 
 --- ftd.column:
 width: fill
 height: fill
 border-width: 2
 border-color: orange
+padding-bottom: 70
 
 --- ftd.text: $title
 style: medium
@@ -59,7 +56,7 @@ if: $subtitle is not null
 font: times new roman
 color: #656f65
 align: center
-size: 20
+size: 30
 
 
 /--- ftd.text: $text
