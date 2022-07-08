@@ -154,7 +154,7 @@ width: fill
 height: fill
 border-top: 2
 border-bottom: 2
-border-color: orange
+border-color: $orange
 padding: 20
 
 --- ftd.text: $title

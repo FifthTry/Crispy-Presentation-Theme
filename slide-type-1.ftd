@@ -77,7 +77,6 @@ string title:
 optional string subtitle:
 optional string text:
 optional ftd.image-src image-1:
-optional ftd.image-src image-2:
 integer slide-number:
 slots: slide-info slide-image
 slot-heights: 100%
