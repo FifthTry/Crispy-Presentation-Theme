@@ -9,6 +9,15 @@ dark: black
 light: white
 dark: white
 
+
+
+
+
+
+
+
+
+
 -- ftd.column presentation:
 width: fill
 height: fill
@@ -32,4 +41,3 @@ height: fill
 --- container: ftd.main
 
 --- panel.panel:
-

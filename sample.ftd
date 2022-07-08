@@ -3,9 +3,6 @@
 -- import: fifthtry.github.io/Crispy-Presentation-Theme/slide-type-1 as slide1
 -- import: fifthtry.github.io/Crispy-Presentation-Theme/slide-type-2 as slide2
 -- import: fifthtry.github.io/Crispy-Presentation-Theme/slide-type-2 as slide3
--- import: fifthtry.github.io/Crispy-Presentation-Theme/assets
-
-
 
 
 
@@ -28,7 +25,6 @@ Presentations Templates are communication tools that can be used as lectures, re
 Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de
 relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta)
 desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.
-
 
 --- slide2.slide-type:
 slide-number: 1
@@ -53,4 +49,3 @@ text-3: The services and food served in the restaurant should be decided properl
 image-1: $assets.files.static.aware.png
 image-2: $assets.files.static.consideration.png
 image-3: $assets.files.static.decision.png
-

@@ -1,7 +1,9 @@
 -- import: fifthtry.github.io/Crispy-Presentation-Theme/library
+
 -- ftd.color orange:
 light: orange
 dark:  orange
+
 -- ftd.color white:
 light: #f4f4f4
 dark:  #f4f4f4
@@ -30,19 +32,16 @@ line-height: 38
 size: 65
 letter-spacing: 0
 
-
 -- ftd.type large: serif
 desktop: $large-desktop
 mobile: $large-desktop
 xl: $large-desktop
 weight: 700
 
-
 -- ftd.font-size medium-desktop:
 line-height: 38
 size: 30
 letter-spacing: 0
-
 
 -- ftd.type medium: serif
 desktop: $medium-desktop
@@ -55,12 +54,19 @@ line-height: 58
 size: 50
 letter-spacing: 0
 
-
 -- ftd.type big: serif
 desktop: $big-desktop
 mobile: $big-desktop
 xl: $big-desktop
 weight: 400
+
+
+
+
+
+
+
+
 
 
 -- ftd.grid slide-type:
@@ -105,7 +111,6 @@ text-align: left
 color: $light-blue
 role: $big
 
-
 --- slide-information:
 title: $title-2
 subtitle: $text-2
@@ -135,6 +140,13 @@ border-color: $orange
 
 
 
+
+
+
+
+
+
+
 -- ftd.column slide-information:
 string title:
 optional string subtitle:
@@ -158,6 +170,3 @@ color: $background
 text-align: center
 align: center
 role: $small
-
-
-
