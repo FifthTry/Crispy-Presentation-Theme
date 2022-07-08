@@ -1,7 +1,76 @@
--- import: library
+-- import: fifthtry.github.io/Crispy-Presentation-Theme/library
+
+-- ftd.color orange:
+light: orange
+dark:  orange
+
+-- ftd.color white:
+light: #f4f4f4
+dark:  #f4f4f4
+
+-- ftd.color light-blue:
+light: #8c8cd6
+dark: #8c8cd6
+
+-- ftd.color background:
+light: #656f65
+dark:  #656f65
+
+-- ftd.font-size small-desktop:
+line-height: 28
+size: 20
+letter-spacing: 0
+
+-- ftd.type small: times new roman
+desktop: $small-desktop
+mobile: $small-desktop
+xl: $small-desktop
+weight: 400
+
+-- ftd.font-size large-desktop:
+line-height: 38
+size: 65
+letter-spacing: 0
+
+-- ftd.type large: serif
+desktop: $large-desktop
+mobile: $large-desktop
+xl: $large-desktop
+weight: 700
+
+-- ftd.font-size medium-desktop:
+line-height: 38
+size: 30
+letter-spacing: 0
+
+-- ftd.type medium: serif
+desktop: $medium-desktop
+mobile: $medium-desktop
+xl: $medium-desktop
+weight: 500
+
+-- ftd.font-size big-desktop:
+line-height: 58
+size: 50
+letter-spacing: 0
+
+-- ftd.type big: serif
+desktop: $big-desktop
+mobile: $big-desktop
+xl: $big-desktop
+weight: 400
+
+
+
+
+
+
+
+
+
 
 -- ftd.grid slide-type:
-background-color: #f4f4f4
+background-color: $white
 width: fill
 height: fill
 optional string title-1:
@@ -10,9 +79,9 @@ optional string title-3:
 optional string text-1:
 optional string text-2:
 optional string text-3:
-optional string image-1:
-optional string image-2:
-optional string image-3:
+optional ftd.image-src image-1:
+optional ftd.image-src image-2:
+optional ftd.image-src image-3:
 integer slide-number:
 slots: . slide-image1 slide-info1 . | slide-heading . slide-info2 slide-image2 | . slide-image3 slide-info3 .
 slot-heights: 33% 33% 33%
@@ -34,13 +103,13 @@ height: fill
 crop: true
 slot: slide-image1
 border-top: 2
-border-color: orange
+border-color: $orange
 
 --- ftd.text: Buyer Journey
 slot: slide-heading
 text-align: left
-color: #8c8cd6
-size: 50
+color: $light-blue
+role: $big
 
 --- slide-information:
 title: $title-2
@@ -53,7 +122,7 @@ height: fill
 crop: true
 slot: slide-image2
 border-top: 2
-border-color: orange
+border-color: $orange
 
 --- slide-information:
 title: $title-3
@@ -67,7 +136,14 @@ crop: true
 slot: slide-image3
 border-top: 2
 border-bottom: 3
-border-color: orange
+border-color: $orange
+
+
+
+
+
+
+
 
 
 
@@ -78,24 +154,19 @@ width: fill
 height: fill
 border-top: 2
 border-bottom: 2
-border-color: orange
+border-color: $orange
 padding: 20
 
 --- ftd.text: $title
-style: medium
-color: #8c8cd6
+role: $medium
+color: $light-blue
 align: center
-size: 30
 margin-bottom: 10
 text-align: center
 
 --- ftd.text: $subtitle
 if: $subtitle is not null
-font: times new roman
-color: #656f65
+color: $background
 text-align: center
-size: 20
 align: center
-
-
-
+role: $small
