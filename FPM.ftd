@@ -1,0 +1,10 @@
+-- import: fpm
+
+-- fpm.package: fifthtry.github.io/Crispy-Presentation-Theme
+zip: github.com/fifthtry/crispy-presentation-theme/archive/refs/heads/main.zip
+base: https://raw.githubusercontent.com/fifthtry/Crispy-Presentation-Theme/main
+
+/-- fpm.dependency: fifthtry.github.io/blog-theme
+
+-- fpm.auto-import: fifthtry.github.io/Crispy-Presentation-Theme/assets
+-- fpm.auto-import: fpm
