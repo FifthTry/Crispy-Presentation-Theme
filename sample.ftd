@@ -1,3 +1,16 @@
+-- import: fifthtry.github.io/Crispy-Presentation-Theme/library
+-- import: fifthtry.github.io/Crispy-Presentation-Theme/presentation as ppt
+-- import: fifthtry.github.io/Crispy-Presentation-Theme/slide-type-1 as slide1
+-- import: fifthtry.github.io/Crispy-Presentation-Theme/slide-type-2 as slide2
+-- import: fifthtry.github.io/Crispy-Presentation-Theme/slide-type-2 as slide3
+-- import: fifthtry.github.io/Crispy-Presentation-Theme/assets
+
+
+
+
+
+
+
 -- library.total: 2
 
 -- ppt.presentation:
@@ -6,8 +19,8 @@
 title: RESTAURANT MARKETING PLAN
 subtitle: Welcome to the treat!
 slide-number: 0
-image-1: static/food.png
-image-2: static/pic1.jpeg
+image-1: $assets.files.static.food.png
+image-2: $assets.files.static.pic1.jpeg
 slide-number: 0
 
 Presentations Templates are communication tools that can be used as lectures, reports, and more.
@@ -25,9 +38,9 @@ title-3: MAIN COURSE
 text-1: A drink is a liquid intended for human consumption. In addition to their basic function of satisfying thirst, drinks play important roles in human culture.
 text-2: Starters consist of a wide variety of hot or cold dishes served before the main course of a meal. As part of a formal dinner, they may be preceded by soup and hors d'oeuvres.
 text-3: The main course is food that is served as the main dish in a multi-course meal. It is often served after the entrée.
-image-1: static/drink.png
-image-2: static/pancake.png
-image-3: static/maincourse.png
+image-1: $assets.files.static.drink.png
+image-2: $assets.files.static.pancake.png
+image-3: $assets.files.static.maincourse.png
 
 --- slide3.slide-type:
 slide-number: 2
@@ -37,7 +50,7 @@ title-3: DECISION
 text-1: A good menu card to present all the options of dishes present in the restaurant
 text-2: Customers consider their choices of restaurants. The restaurant venue and ambiance attract customers to visit next time.
 text-3: The services and food served in the restaurant should be decided properly. The staffs should be selected according to the standards.
-image-1: static/aware.png
-image-2: static/consideration.png
-image-3: static/decision.png
+image-1: $assets.files.static.aware.png
+image-2: $assets.files.static.consideration.png
+image-3: $assets.files.static.decision.png
 

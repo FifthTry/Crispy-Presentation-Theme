@@ -1,14 +1,79 @@
--- import: library
+-- import: fifthtry.github.io/Crispy-Presentation-Theme/library
+
+-- ftd.color white:
+light: #f4f4f4
+dark:  #f4f4f4
+
+-- ftd.color orange:
+light: orange
+dark:  orange
+
+-- ftd.color light-blue:
+light: #8c8cd6
+dark: #8c8cd6
+
+-- ftd.color background:
+light: #656f65
+dark:  #656f65
+
+-- ftd.font-size small-desktop:
+line-height: 28
+size: 20
+letter-spacing: 0
+
+-- ftd.type small: times new roman
+desktop: $small-desktop
+mobile: $small-desktop
+xl: $small-desktop
+weight: 400
+
+-- ftd.font-size large-desktop:
+line-height: 38
+size: 65
+letter-spacing: 0
+
+
+-- ftd.type large: serif
+desktop: $large-desktop
+mobile: $large-desktop
+xl: $large-desktop
+weight: 700
+
+
+-- ftd.font-size medium-desktop:
+line-height: 38
+size: 30
+letter-spacing: 0
+
+
+-- ftd.type medium: times new roman
+desktop: $medium-desktop
+mobile: $medium-desktop
+xl: $medium-desktop
+weight: 500
+
+-- ftd.font-size big-desktop:
+line-height: 58
+size: 50
+letter-spacing: 0
+
+
+-- ftd.type big: serif
+desktop: $big-desktop
+mobile: $big-desktop
+xl: $big-desktop
+weight: 500
+
 
 -- ftd.grid slide-type:
-background-color: #f4f4f4
+background-color: $white
 width: fill
 height: fill
 string title:
 optional string subtitle:
 optional string text:
-optional string image-1:
-optional string image-2:
+optional ftd.image-src image-1:
+optional ftd.image-src image-2:
 integer slide-number:
 slots: slide-info slide-image
 slot-heights: 100%
@@ -42,14 +107,13 @@ align: right
 width: fill
 height: fill
 border-width: 2
-border-color: orange
+border-color: $orange
 padding-bottom: 70
 
 --- ftd.text: $title
-style: medium
-color: #8c8cd6
+color: $light-blue
 align: center
-size: 50
+role: $big
 padding-top: 50
 padding-left: 30
 margin-bottom: 10
@@ -57,8 +121,8 @@ text-align: center
 
 --- ftd.text: $subtitle
 if: $subtitle is not null
-font: times new roman
-color: #656f65
+color: $background
 align: center
-size: 30
+role: $medium
+
 

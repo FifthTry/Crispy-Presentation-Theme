@@ -1,7 +1,73 @@
--- import: library
+-- import: fifthtry.github.io/Crispy-Presentation-Theme/library
+
+
+-- ftd.color orange:
+light: orange
+dark:  orange
+
+-- ftd.color white:
+light: #f4f4f4
+dark:  #f4f4f4
+
+-- ftd.color light-blue:
+light: #8c8cd6
+dark: #8c8cd6
+
+-- ftd.color background:
+light: #656f65
+dark:  #656f65
+
+-- ftd.font-size small-desktop:
+line-height: 28
+size: 20
+letter-spacing: 0
+
+-- ftd.type small: times new roman
+desktop: $small-desktop
+mobile: $small-desktop
+xl: $small-desktop
+weight: 400
+
+-- ftd.font-size large-desktop:
+line-height: 38
+size: 65
+letter-spacing: 0
+
+
+-- ftd.type large: serif
+desktop: $large-desktop
+mobile: $large-desktop
+xl: $large-desktop
+weight: 700
+
+
+-- ftd.font-size medium-desktop:
+line-height: 38
+size: 30
+letter-spacing: 0
+
+
+-- ftd.type medium: serif
+desktop: $medium-desktop
+mobile: $medium-desktop
+xl: $medium-desktop
+weight: 500
+
+-- ftd.font-size big-desktop:
+line-height: 48
+size: 40
+letter-spacing: 0
+
+
+-- ftd.type big: serif
+desktop: $big-desktop
+mobile: $big-desktop
+xl: $big-desktop
+weight: 500
+
 
 -- ftd.grid slide-type:
-background-color: #f4f4f4
+background-color:$white
 width: fill
 height: fill
 optional string title-1:
@@ -10,9 +76,9 @@ optional string title-3:
 optional string text-1:
 optional string text-2:
 optional string text-3:
-optional string image-1:
-optional string image-2:
-optional string image-3:
+optional ftd.image-src image-1:
+optional ftd.image-src image-2:
+optional ftd.image-src image-3:
 integer slide-number:
 slots: slide-image1 slide-image2 slide-image3 | slide-text1 slide-text2 slide-text3
 slot-heights: 50% 50%
@@ -45,7 +111,7 @@ height: fill
 crop: true
 slot: slide-image1
 border-width: 3
-border-color: orange
+border-color: $orange
 
 --- ftd.image:
 src: $image-2
@@ -53,7 +119,7 @@ height: fill
 crop: true
 slot: slide-image2
 border-width: 3
-border-color: orange
+border-color: $orange
 
 --- ftd.image:
 src: $image-3
@@ -61,7 +127,7 @@ height: fill
 crop: true
 slot: slide-image3
 border-width: 3
-border-color: orange
+border-color: $orange
 
 
 -- ftd.column slide-information:
@@ -73,18 +139,15 @@ spacing: space-around
 padding: 30
 
 --- ftd.text: $title
-style: medium
-color: #8c8cd6
+color: $light-blue
 align: center
-size: 40
+role: $big
 padding-top: 10
 margin-bottom: 15
 text-align: center
 
 --- ftd.text: $text
-if: $text is not null
-font: times new roman
-color: #656f65
+color: $background
 text-align: center
-size: 30
+role: $medium
 

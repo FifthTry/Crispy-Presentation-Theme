@@ -4,3 +4,6 @@
 zip: github.com/fifthtry/crispy-presentation-theme/archive/refs/heads/main.zip
 
 /-- fpm.dependency: fifthtry.github.io/blog-theme
+
+-- fpm.auto-import: fifthtry.github.io/Crispy-Presentation-Theme/assets
+-- fpm.auto-import: fpm
